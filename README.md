@@ -1,0 +1,2 @@
+# sketchybar
+sketchybar config
