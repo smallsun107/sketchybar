@@ -4,6 +4,7 @@ SPACE_ICONS=("0:~" "1:WEB" "2:CHAT" "3:DEV" "4:REVERSE" "5:CAPTURE" "6:NOTE" "7:
 
 # 修改padding可以实现堆叠模式,目前未使用
 SPACE=(
+    icon.padding_left=12
     icon.font="$FONT:Bold:12.0"
     icon.color=$ROSE
     icon.highlight_color=$LOVE
