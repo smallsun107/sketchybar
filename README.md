@@ -1,2 +1,2 @@
 # sketchybar
-sketchybar config
+SketchyBar Configuration part of my dotfiles
