@@ -32,4 +32,7 @@ do
     sketchybar --subscribe space.$sid mouse.clicked
 done
 
-sketchybar --add item separator left --set separator icon= icon.font="$FONT:Bold:12.0" background.padding_left=16 background.padding_right=10 label.drawing=off icon.color=$GOLD script="$PLUGIN_DIR/space_windows.sh" --subscribe separator space_windows_change
+
+sketchybar --add item yabai_mode left --set yabai_mode update_freq=3 script="$PLUGIN_DIR/yabai.sh" click_script="$PLUGIN_DIR/yabai_click.sh" --subscribe yabai_mode space_change
+
+sketchybar --add item separator left --set separator icon= icon.font="$FONT:Bold:12.0" background.padding_left=4 background.padding_right=4 label.drawing=off icon.color=$GOLD script="$PLUGIN_DIR/space_windows.sh" --subscribe separator space_windows_change
