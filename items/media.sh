@@ -1,6 +1,8 @@
 #!/bin/bash
 
 MEDIA=(
+    icon.padding_left=12
+    label.padding_right=12
     label.font="$FONT:Bold:12.0"
     label.color=$LOVE
     label.max_chars=16

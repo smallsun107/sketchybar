@@ -1,6 +1,8 @@
 #!/bin/bash
 
 SOUND=(
+    icon.padding_left=12
+    label.padding_right=12
     label.font="$FONT:Bold:12.0"
     label.color=$LOVE
     icon.font="$FONT:Bold:16.0"
