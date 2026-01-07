@@ -7,8 +7,8 @@ SPACE=(
     icon.padding_left=12
     icon.padding_right=12
     icon.font="$FONT:Bold:12.0"
-    icon.color=$ROSE
-    icon.highlight_color=$LOVE
+    icon.color=$LOVE
+    icon.highlight_color=$ROSE
     # label.font="$FONT:Bold:12.0"
     label.font="sketchybar-app-font:Regular:12.0"
     label.padding_right=20
@@ -35,4 +35,4 @@ done
 
 sketchybar --add item yabai_mode left --set yabai_mode update_freq=3 script="$PLUGIN_DIR/yabai.sh" click_script="$PLUGIN_DIR/yabai_click.sh" --subscribe yabai_mode space_change
 
-sketchybar --add item separator left --set separator icon= icon.font="$FONT:Bold:12.0" background.padding_left=4 background.padding_right=4 label.drawing=off icon.color=$GOLD script="$PLUGIN_DIR/space_windows.sh" --subscribe separator space_windows_change
+sketchybar --add item separator left --set separator icon="$SPACE_SEPARATOR" icon.font="$FONT:Bold:12.0" background.padding_left=4 background.padding_right=4 label.drawing=off icon.color=$GOLD script="$PLUGIN_DIR/space_windows.sh" --subscribe separator space_windows_change

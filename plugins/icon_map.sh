@@ -984,7 +984,7 @@ function __icon_map() {
    "TeamSpeak 3")
         icon_result=":team_speak:"
         ;;
-   "Telegram")
+   "Telegram" | "AyuGram")
         icon_result=":telegram:"
         ;;
    "Terminal" | "终端" | "ターミナル")

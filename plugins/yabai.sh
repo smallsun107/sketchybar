@@ -1,19 +1,21 @@
 #!/bin/bash
+
 source "$CONFIG_DIR/colors.sh"
+source "$CONFIG_DIR/icons.sh"
 
 yabai_mode=$(yabai -m query --spaces --space | jq -r .type)
 
 case "$yabai_mode" in
     bsp)
-        icon=""
+        icon="$YABAI_BSP"
         color=$LOVE
         ;;
     stack)
-        icon=""
+        icon="$YABAI_STACK"
         color=$GOLD
         ;;
     float)
-        icon=""
+        icon="$YABAI_FLOAT"
         color=$IRIS
         ;;
     *)
