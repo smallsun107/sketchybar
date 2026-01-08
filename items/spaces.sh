@@ -17,7 +17,7 @@ SPACE=(
     background.height=26
     background.color=$OVERLAY
     background.corner_radius=10
-    background.drawing=on
+    background.drawing=off
     script="$PLUGIN_DIR/spaces.sh"
 )
 
@@ -32,6 +32,7 @@ do
     sketchybar --subscribe space.$sid mouse.clicked
 done
 
+sketchybar --add bracket spaces '/space\..*/' --set spaces background.color=$OVERLAY background.corner_radius=10 background.height=26
 
 sketchybar --add item yabai_mode left --set yabai_mode update_freq=3 script="$PLUGIN_DIR/yabai.sh" click_script="$PLUGIN_DIR/yabai_click.sh" --subscribe yabai_mode space_change
 
