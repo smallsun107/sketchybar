@@ -5,13 +5,14 @@ SPACE_ICONS=("0:~" "1:WEB" "2:CHAT" "3:DEV" "4:REVERSE" "5:CAPTURE" "6:NOTE" "7:
 # 修改padding可以实现堆叠模式,目前未使用
 SPACE=(
     icon.padding_left=12
-    icon.padding_right=12
+    icon.padding_right=2
     icon.font="$FONT:Bold:12.0"
     icon.color=$LOVE
     icon.highlight_color=$ROSE
     # label.font="$FONT:Bold:12.0"
     label.font="sketchybar-app-font:Regular:12.0"
-    label.padding_right=20
+    label.padding_left=2
+    label.padding_right=12
     label.color=$FOAM
     label.drawing=on
     background.height=26
