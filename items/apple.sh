@@ -3,7 +3,7 @@
 POPUP_OFF="sketchybar --set apple.logo popup.drawing=off"
 POPUP_CLICK_SCRIPT="sketchybar --set \$NAME popup.drawing=toggle"
 
-apple_logo=(
+APPLE_LOGO=(
     icon="$APPLE"
     icon.color=$LOVE
     icon.padding_left=4
@@ -18,7 +18,7 @@ apple_logo=(
     popup.y_offset=10
 )
 
-apple_prefs=(
+APPLE_PREFS=(
     icon="$PREFERENCES"
     label="Preferences"
     icon.color=$LOVE
@@ -26,7 +26,7 @@ apple_prefs=(
     click_script="open -a 'System Preferences'; $POPUP_OFF"
 )
 
-apple_activity=(
+APPLE_ACTIVITY=(
     icon="$ACTIVITY"
     label="Activity"
     icon.color=$LOVE
@@ -34,7 +34,7 @@ apple_activity=(
     click_script="open -a 'Activity Monitor'; $POPUP_OFF"
 )
 
-apple_lock=(
+APPLE_LOCK=(
     icon="$LOCK"
     label="Lock Screen"
     icon.color=$LOVE
@@ -43,13 +43,13 @@ apple_lock=(
 )
 
 sketchybar --add item apple.logo left                  \
-           --set apple.logo "${apple_logo[@]}"         \
+           --set apple.logo "${APPLE_LOGO[@]}"         \
                                                        \
            --add item apple.prefs popup.apple.logo     \
-           --set apple.prefs "${apple_prefs[@]}"       \
+           --set apple.prefs "${APPLE_PREFS[@]}"       \
                                                        \
            --add item apple.activity popup.apple.logo  \
-           --set apple.activity "${apple_activity[@]}" \
+           --set apple.activity "${APPLE_ACTIVITY[@]}" \
                                                        \
            --add item apple.lock popup.apple.logo      \
-           --set apple.lock "${apple_lock[@]}"
+           --set apple.lock "${APPLE_LOCK[@]}"

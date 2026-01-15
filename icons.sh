@@ -27,6 +27,7 @@ NETWORK_GOOD=󰤥
 NETWORK_FAIR=󰤢
 NETWORK_WEAK=󰤟
 NETWORK_OFFLINE=󰤯
+NETWORK_VPN=󰒃
 NETWORK_LEVEL_4=●●●●
 NETWORK_LEVEL_3=●●●
 NETWORK_LEVEL_2=●●
@@ -65,3 +66,26 @@ WEATHER_DEBUG=
 YABAI_BSP=
 YABAI_STACK=
 YABAI_FLOAT=
+
+# Media/Spotify Icons
+MEDIA=󰎆
+MEDIA_BACK=󰒮
+MEDIA_PLAY=󰐊
+MEDIA_PAUSE=󰏤
+MEDIA_NEXT=󰒭
+MEDIA_REPEAT=󰑖
+
+# System Monitor Icons
+SYSINFO_CPU=󰘚
+SYSINFO_MEMORY=󰍛
+SYSINFO_DISK=󰋊
+
+# Network Speed Icons
+SPEED_ICON=󰖈
+SPEED_UP=󰜷
+SPEED_DOWN=󰜮
+
+# Surge Icons
+SURGE_DIRECT=󰌘
+SURGE_GLOBAL=󰖟
+SURGE_RULE=󰒄

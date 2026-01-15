@@ -5,7 +5,8 @@ source "$CONFIG_DIR/icons.sh"
 PERCENTAGE=$(pmset -g batt | grep -Eo "\d+%" | cut -d% -f1)
 CHARGING=$(pmset -g batt | grep 'AC Power')
 
-if [ $PERCENTAGE = "" ]; then
+if [ -z "$PERCENTAGE" ]; then
+    sketchybar --set $NAME icon="$BATTERY_CHARGING" label="AC Power"
     exit 0
 fi
 

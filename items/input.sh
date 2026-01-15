@@ -6,7 +6,7 @@ INPUT=(
     label.font="$FONT:Bold:12.0"
     label.color=$LOVE
     icon="$INPUT_KEYBOARD"
-    icon.font="$FONT:Bold:12.0"
+    icon.font="$FONT:Bold:16.0"
     icon.color=$LOVE
     background.height=26
     background.color=$OVERLAY
@@ -15,4 +15,4 @@ INPUT=(
 )
 
 sketchybar --add event input_change "AppleSelectedInputSourcesChangedNotification"
-sketchybar --add item input right --set input "${INPUT[@]}" padding_left=8 --subscribe input input_change 
+sketchybar --add item input right --set input "${INPUT[@]}" --subscribe input input_change 
