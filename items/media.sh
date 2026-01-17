@@ -43,8 +43,9 @@ MEDIA_COVER=(
 
 MEDIA_TITLE=(
     icon.drawing=off
-    label.font="$FONT:Bold:12.0"
+    label.font="$FONT:Bold:10.0"
     label.color=$LOVE
+    label.max_chars=15
     padding_left=0
     padding_right=0
     width=0
@@ -63,8 +64,9 @@ MEDIA_ARTIST=(
 
 MEDIA_ALBUM=(
     icon.drawing=off
-    label.font="$FONT:Regular:12.0"
+    label.font="$FONT:Regular:10.0"
     label.color=$FOAM
+    label.max_chars=15
     padding_left=0
     padding_right=0
     width=0

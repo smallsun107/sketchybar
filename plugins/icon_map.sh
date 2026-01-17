@@ -9,7 +9,7 @@ function __icon_map() {
    "Acrobat")
         icon_result=":acrobat:"
         ;;
-   "Activity Monitor" | "Aktivitätsanzeige")
+   "Activity Monitor" | "Aktivitätsanzeige" | "活动监视器")
         icon_result=":activity_monitor:"
         ;;
    "Actual")
@@ -135,7 +135,7 @@ function __icon_map() {
    "BluOS Controller")
         icon_result=":bluos_controller:"
         ;;
-   "Books" | "Calibre" | "Bücher")
+   "Books" | "Calibre" | "Bücher" | "图书")
         icon_result=":book:"
         ;;
    "Brain.fm")
@@ -153,7 +153,7 @@ function __icon_map() {
    "BusyCal")
         icon_result=":busycal:"
         ;;
-   "Calculator" | "Calculette" | "Rechner")
+   "Calculator" | "Calculette" | "Rechner" | "计算器")
         icon_result=":calculator:"
         ;;
    "Calendar" | "日历" | "Fantastical" | "Cron" | "Amie" | "Calendrier" | "カレンダー" | "Notion Calendar" | "Kalender")
@@ -321,7 +321,7 @@ function __icon_map() {
    "Final Cut Pro")
         icon_result=":final_cut_pro:"
         ;;
-   "Find My")
+   "Find My" | "查找")
         icon_result=":find_my:"
         ;;
    "Finder" | "访达")
@@ -417,7 +417,7 @@ function __icon_map() {
    "Helium")
         icon_result=":helium:"
         ;;
-   "Home")
+   "Home" | "家庭")
         icon_result=":home:"
         ;;
    "Home Assistant")
@@ -456,7 +456,7 @@ function __icon_map() {
    "Instapaper")
         icon_result=":instapaper:"
         ;;
-   "iPhone Mirroring")
+   "iPhone Mirroring" | "iPhone镜像")
         icon_result=":iphone_mirroring:"
         ;;
    "Iris")
