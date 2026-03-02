@@ -1,5 +1,14 @@
 #!/bin/bash
 
+STATE_FILE="/tmp/sketchybar_memory_mode"
+
+# init state file
+if [ ! -f "$STATE_FILE" ]; then
+    echo "prs" > "$STATE_FILE"
+fi
+
+MODE=$(cat "$STATE_FILE")
+
 TOTAL_MEM=$(sysctl -n hw.memsize)
 PAGE_SIZE=$(sysctl -n vm.pagesize)
 
@@ -14,4 +23,18 @@ FREE_PERCENT=$(memory_pressure 2>/dev/null | grep "System-wide memory free perce
 PRESSURE_PERCENT=$((100 - FREE_PERCENT))
 
 # sketchybar --set $NAME label="${MEM_PERCENT}%|${PRESSURE_PERCENT}%"
-sketchybar --set $NAME label="${PRESSURE_PERCENT}%"
+# sketchybar --set $NAME label="${PRESSURE_PERCENT}%"
+if [ "$SENDER" = "mouse.clicked" ]; then
+    if [ "$MODE" = "mem" ]; then
+        MODE="prs"
+    else
+        MODE="mem"
+    fi
+    echo "$MODE" > "$STATE_FILE"
+fi
+
+if [ "$MODE" = "mem" ]; then
+    sketchybar --set $NAME label="${MEM_PERCENT}%"
+else
+    sketchybar --set $NAME label="${PRESSURE_PERCENT}%"
+fi

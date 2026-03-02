@@ -145,6 +145,7 @@ sketchybar --add item cpu right \
            \
            --add item memory right \
            --set memory "${MEMORY[@]}" \
+           --subscribe memory mouse.clicked \
            \
            --add item disk right \
            --set disk "${DISK[@]}" \
