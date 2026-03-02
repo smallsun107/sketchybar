@@ -13,4 +13,5 @@ MEM_PERCENT=$((USED_MEM * 100 / TOTAL_MEM))
 FREE_PERCENT=$(memory_pressure 2>/dev/null | grep "System-wide memory free percentage" | awk '{print $NF}' | tr -d '%')
 PRESSURE_PERCENT=$((100 - FREE_PERCENT))
 
-sketchybar --set $NAME label="${MEM_PERCENT}%|${PRESSURE_PERCENT}%"
+# sketchybar --set $NAME label="${MEM_PERCENT}%|${PRESSURE_PERCENT}%"
+sketchybar --set $NAME label="${PRESSURE_PERCENT}%"
