@@ -28,7 +28,9 @@ repeat() {
 
 update() {
     PLAYING=1
-    if [ "$(echo "$INFO" | jq -r '.["Player State"]')" = "Playing" ]; then
+    STATE=$(echo "$INFO" | jq -r '.["Player State"]')
+
+    if [ "$STATE" = "Playing" ] || [ "$STATE" = "Paused" ]; then
         PLAYING=0
         TITLE=$(echo "$INFO" | jq -r .Name | sed 's/\(.\{16\}\).*/\1.../')
         ARTIST=$(echo "$INFO" | jq -r .Artist | sed 's/\(.\{16\}\).*/\1.../')
@@ -49,7 +51,14 @@ update() {
         else
             args+=(--set media label="$TITLE - $ARTIST" drawing=on)
         fi
-        args+=(--set media.play icon=$MEDIA_PAUSE)
+          if [ "$STATE" = "Playing" ]; then
+              args+=(--set media icon.color=$LOVE label.color=$LOVE)
+
+              args+=(--set media.play icon=$MEDIA_PAUSE)
+          else
+              args+=(--set media icon.color=$MUTED label.color=$SUBTLE)
+              args+=(--set media.play icon=$MEDIA_PLAY)
+          fi
         args+=(--set media.cover background.image="/tmp/spotify_cover.jpg")
         args+=(--set media.title label="$TITLE")
         args+=(--set media.artist label="$ARTIST")
