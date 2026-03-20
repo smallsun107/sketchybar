@@ -20,7 +20,9 @@ APPLE_LOGO=(
 
 APPLE_PREFS=(
     icon="$PREFERENCES"
+    icon.font="$FONT:Bold:14.0"
     label="Preferences"
+    label.font="$FONT:Bold:12.0"
     icon.color=$LOVE
     label.color=$FOAM
     click_script="open -a 'System Preferences'; $POPUP_OFF"
@@ -28,7 +30,9 @@ APPLE_PREFS=(
 
 APPLE_ACTIVITY=(
     icon="$ACTIVITY"
+    icon.font="$FONT:Bold:14.0"
     label="Activity"
+    label.font="$FONT:Bold:12.0"
     icon.color=$LOVE
     label.color=$FOAM
     click_script="open -a 'Activity Monitor'; $POPUP_OFF"
@@ -36,7 +40,9 @@ APPLE_ACTIVITY=(
 
 APPLE_LOCK=(
     icon="$LOCK"
+    icon.font="$FONT:Bold:14.0"
     label="Lock Screen"
+    label.font="$FONT:Bold:12.0"
     icon.color=$LOVE
     label.color=$FOAM
     click_script="pmset displaysleepnow; $POPUP_OFF"
