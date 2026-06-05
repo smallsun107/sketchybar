@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Apple
-APPLE=􀣺
-PREFERENCES=􀺽
-ACTIVITY=􀒓
-LOCK=􀒳
+APPLE=
+PREFERENCES=
+ACTIVITY=󰓅
+LOCK=
 
 # Battery Icons
 BATTERY_FULL=
@@ -19,7 +19,7 @@ CLOCK=󰅐
 CALENDAR=󰸗
 
 # Input Keyboard
-INPUT_KEYBOARD=􀇳
+INPUT_KEYBOARD=
 
 # Network Icons
 NETWORK_STRONG=󰤨
